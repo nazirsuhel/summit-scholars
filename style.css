@@ -62,7 +62,7 @@ nav .links a[aria-current="page"]{color:var(--brand);font-weight:700}
 
 .card{position:relative;overflow:hidden;padding:22px 20px 18px;border-radius:16px;box-shadow:0 1px 3px rgba(0,0,0,.06);transition:transform .2s,box-shadow .2s,border-color .2s}
 .card:before{content:"";position:absolute;left:0;right:0;top:0;height:5px;background:var(--c)}
-.card[data-cat=grad]{--c:#4a74f0}.card[data-cat=ug]{--c:#20a874}.card[data-cat=law]{--c:#a06ae6}.card[data-cat=eng]{--c:#e8803a}
+.card{--c:#1f9d6b}
 .badge{display:inline-flex;align-items:center;justify-content:center;min-width:58px;height:58px;padding:0 14px;border-radius:14px;background:var(--c);color:#fff;font:700 18px Arial,sans-serif;letter-spacing:.02em;margin:4px 0 14px;box-shadow:0 4px 10px rgba(0,0,0,.18)}
 .card .tag{display:block;color:var(--c)}
 .card h3{font-size:18px;margin:4px 0 6px}
