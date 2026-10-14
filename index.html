@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Summit Scholars Prep – GRE, GMAT, SAT, ACT, LSAT, IELTS, TOEFL, PTE & Duolingo</title>
+<style>
+:root{--bg:#fbfaf7;--surf:#fff;--ink:#1c2230;--mut:#5d6677;--line:#e4e1d9;--brand:#1f4fd8;--brand2:#0f2a7a;--acc:#f0a81c;--chip:#eef2ff;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#10131b;--surf:#181c27;--ink:#eceef4;--mut:#a0a8ba;--line:#2a3042;--brand:#7a9bff;--brand2:#b9c9ff;--acc:#f5b83d;--chip:#1f2640;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#10131b;--surf:#181c27;--ink:#eceef4;--mut:#a0a8ba;--line:#2a3042;--brand:#7a9bff;--brand2:#b9c9ff;--acc:#f5b83d;--chip:#1f2640;color-scheme:dark}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 Georgia,'Times New Roman',serif}
+h1,h2,h3,nav,button,.chip,th,.tag{font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif}
+a{color:var(--brand)}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
+nav{display:flex;align-items:center;justify-content:space-between;height:56px;gap:12px}
+.logo{font-weight:800;font-size:18px;color:var(--ink);text-decoration:none}.logo span{color:var(--brand)}
+nav .links{display:flex;gap:18px;font-size:14px;overflow-x:auto}
+nav .links a{color:var(--mut);text-decoration:none;white-space:nowrap}
+nav .links a:hover{color:var(--brand)}
+.hero{padding:64px 0 48px}
+.hero h1{font-size:clamp(32px,6vw,54px);line-height:1.1;margin:0 0 16px;letter-spacing:-.02em;max-width:760px}
+.hero h1 em{font-style:normal;color:var(--brand)}
+.hero p{font-size:18px;color:var(--mut);max-width:640px;margin:0 0 24px}
+.btn{display:inline-block;background:var(--brand);color:#fff;padding:12px 22px;border-radius:8px;font:600 15px system-ui,sans-serif;text-decoration:none;border:0;cursor:pointer}
+.btn.alt{background:transparent;color:var(--brand);border:1.5px solid var(--brand);margin-left:8px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-top:36px}
+.stat{background:var(--surf);border:1px solid var(--line);border-radius:10px;padding:14px 16px}
+.stat b{font:700 26px system-ui,sans-serif;color:var(--brand);display:block}.stat span{font-size:13px;color:var(--mut)}
+section{padding:48px 0;border-top:1px solid var(--line)}
+h2{font-size:30px;margin:0 0 8px;letter-spacing:-.01em}.sub{color:var(--mut);margin:0 0 24px;max-width:700px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px}
+.chip{background:var(--chip);color:var(--brand2);border:1px solid transparent;padding:6px 14px;border-radius:999px;font-size:14px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--brand);color:#fff}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px}
+.card{background:var(--surf);border:1px solid var(--line);border-radius:12px;padding:18px;text-align:left;cursor:pointer;color:var(--ink);font:inherit;transition:.15s}
+.card:hover,.card[aria-pressed="true"]{border-color:var(--brand);transform:translateY(-2px)}
+.card h3{margin:0 0 4px;font-size:22px}.card .tag{font-size:12px;color:var(--acc);font-weight:700;text-transform:uppercase;letter-spacing:.05em}
+.card p{margin:8px 0 0;font-size:14px;color:var(--mut)}
+#detail{background:var(--surf);border:1px solid var(--line);border-radius:14px;padding:28px;margin-top:24px}
+#detail h3{font-size:28px;margin:0 0 4px}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px;margin:18px 0}
+.fact{background:var(--bg);border-radius:8px;padding:10px 14px;border:1px solid var(--line)}
+.fact small{display:block;color:var(--mut);font:12px system-ui,sans-serif;text-transform:uppercase;letter-spacing:.04em}.fact b{font:600 15px system-ui,sans-serif}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px}
+h4{font:700 15px system-ui,sans-serif;margin:18px 0 6px;color:var(--brand2);text-transform:uppercase;letter-spacing:.04em}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:14px}th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}th{font-size:12px;color:var(--mut);text-transform:uppercase}
+ul{padding-left:20px;margin:6px 0}li{margin:4px 0}
+.cmp td:first-child{font-weight:700;font-family:system-ui,sans-serif;white-space:nowrap}
+.plan{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;counter-reset:s}
+.step{background:var(--surf);border:1px solid var(--line);border-radius:12px;padding:18px}
+.step:before{counter-increment:s;content:counter(s);display:inline-grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--brand);color:#fff;font:700 14px system-ui,sans-serif;margin-bottom:8px}
+.step h3{margin:0 0 4px;font-size:18px}.step p{margin:0;font-size:14px;color:var(--mut)}
+details{background:var(--surf);border:1px solid var(--line);border-radius:10px;padding:12px 16px;margin-bottom:10px}
+summary{cursor:pointer;font:600 16px system-ui,sans-serif}details p{margin:8px 0 0;color:var(--mut)}
+footer{border-top:1px solid var(--line);padding:32px 0;font-size:13px;color:var(--mut)}
+@media(max-width:640px){nav .links{display:none}.btn.alt{margin:10px 0 0}#detail{padding:18px}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><nav>
+<a class="logo" href="#top">Summit<span>Scholars</span></a>
+<div class="links"><a href="#tests">Tests</a><a href="#compare">Compare</a><a href="#plan">Study plan</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></div>
+</nav></div></header>
+
+<main id="top">
+<div class="wrap hero">
+<h1>Your clearest path to a <em>higher score</em>.</h1>
+<p>Honest, in-depth guides to the nine tests that open doors to universities abroad: GRE, GMAT, SAT, ACT, LSAT, IELTS, TOEFL, PTE Academic and the Duolingo English Test.</p>
+<a class="btn" href="#tests">Explore the tests</a><a class="btn alt" href="#compare">Compare side by side</a>
+<div class="stats"><div class="stat"><b>9</b><span>Tests covered in depth</span></div><div class="stat"><b>4</b><span>Test families: grad, business, law, undergrad, English</span></div><div class="stat"><b>1:1</b><span>Personalised study plans</span></div><div class="stat"><b>24/7</b><span>Practice-question access</span></div></div>
+</div>
+
+<section id="tests"><div class="wrap">
+<h2>Find your test</h2>
+<p class="sub">Pick a category, then select a test for its format, scoring, who needs it and how to prepare.</p>
+<div class="chips" id="chips"></div>
+<div class="grid" id="grid"></div>
+<div id="detail" aria-live="polite"></div>
+</div></section>
+
+<section id="compare"><div class="wrap">
+<h2>Tests at a glance</h2>
+<p class="sub">A quick comparison. Formats evolve, so always confirm current details on the official test website before registering.</p>
+<div class="tbl"><table class="cmp"><thead><tr><th>Test</th><th>For</th><th>Approx. length</th><th>Score range</th><th>Delivery</th></tr></thead><tbody id="cmp"></tbody></table></div>
+</div></section>
+
+<section id="plan"><div class="wrap">
+<h2>How we help you prepare</h2>
+<p class="sub">The same four-step method works across every exam.</p>
+<div class="plan">
+<div class="step"><h3>Diagnose</h3><p>A full-length timed diagnostic reveals your baseline and the specific question types costing you points.</p></div>
+<div class="step"><h3>Plan</h3><p>Work back from your test date and target score to build a weekly schedule you can actually keep.</p></div>
+<div class="step"><h3>Train</h3><p>Targeted lessons and drills on weak areas, then mixed sets, then timed sections under real conditions.</p></div>
+<div class="step"><h3>Review</h3><p>Every mistake is logged and classified: knowledge gap, careless error or timing. Then fixed on purpose.</p></div>
+</div></div></section>
+
+<section id="faq"><div class="wrap">
+<h2>Frequently asked questions</h2><p class="sub"></p>
+<details><summary>How early should I start preparing?</summary><p>Most students need 8–12 weeks of consistent study for GRE, GMAT, SAT, ACT or LSAT (LSAT often takes longer), and 4–8 weeks for English tests, depending on starting level.</p></details>
+<details><summary>Which English test do universities prefer?</summary><p>It varies by institution and country. IELTS and TOEFL are the most widely accepted; PTE and Duolingo are accepted by a growing number of schools. Check each programme's admissions page before choosing.</p></details>
+<details><summary>Do I need GRE or GMAT for my master's programme?</summary><p>MBA and many business master's programmes use GMAT or GRE; most other graduate programmes use the GRE, and some have gone test-optional. Policies change yearly, so verify with each programme.</p></details>
+<details><summary>Can I retake a test?</summary><p>Yes, all nine allow retakes but each has its own waiting periods, annual limits and score-reporting rules. See the test's official policy.</p></details>
+<details><summary>Are the details on this site official?</summary><p>No. This is an independent preparation guide. Test makers update formats, scoring and fees, so treat our summaries as a starting point and confirm on the official sites.</p></details>
+</div></section>
+
+<section id="contact"><div class="wrap">
+<h2>Book a free strategy call</h2>
+<p class="sub">Tell us your target programme and test date and we will recommend a test, a timeline and a study plan.</p>
+<a class="btn" href="mailto:hello@summitscholars.example">hello@summitscholars.example</a>
+</div></section>
+</main>
+
+<footer><div class="wrap">© 2026 Summit Scholars Prep. Independent test-preparation provider, not affiliated with ETS, GMAC, College Board, ACT, LSAC, IELTS partners, Pearson or Duolingo. All test names are trademarks of their owners. Information is general guidance and may be out of date.</div></footer>
+
+<script>
+const T=[
+{id:'GRE',cat:'grad',name:'GRE General Test',tag:'Graduate school',short:'Master\'s, PhD and some MBA programmes.',len:'~1 h 58 min',range:'130–170 per section; Writing 0–6',mode:'Test centre or at home',
+ who:'Applicants to graduate programmes in nearly every field, plus many business schools that accept it in place of the GMAT.',
+ sec:[['Analytical Writing','1 "Analyze an Issue" task','30 min'],['Verbal Reasoning','2 sections, 27 questions total','41 min'],['Quantitative Reasoning','2 sections, 27 questions total','47 min']],
+ score:'Verbal and Quant are each scored 130–170 in 1-point steps; Writing is 0–6 in half-points. Sections adapt: your performance on the first section of each measure determines the difficulty of the second.',
+ skills:['Vocabulary in context, reading comprehension and text completion','Arithmetic, algebra, geometry and data interpretation (high-school level)','Quantitative comparison questions unique to the GRE','Building a clear, well-supported argumentative essay'],
+ tips:['Learn high-frequency words in context, not from random lists','You can move freely within a section, so flag and return','Use the on-screen calculator wisely; don\'t over-rely on it','Time the essay: 5 min planning, 20 min writing, 5 min editing']},
+{id:'GMAT',cat:'grad',name:'GMAT Focus Edition',tag:'Business school',short:'MBA and business master\'s programmes.',len:'~2 h 15 min',range:'205–805 total; 60–90 per section',mode:'Test centre or online',
+ who:'MBA, Executive MBA and business master\'s applicants. It replaced the older GMAT format, which was retired in early 2024.',
+ sec:[['Quantitative Reasoning','21 questions','45 min'],['Verbal Reasoning','23 questions','45 min'],['Data Insights','20 questions','45 min']],
+ score:'The total score (205–805) combines all three sections equally. Each section is scored 60–90. There is no essay section. Scores are valid for five years.',
+ skills:['Quant: arithmetic and algebra (no geometry)','Verbal: reading comprehension and critical reasoning','Data Insights: table analysis, graphics, multi-source reasoning, two-part analysis','Choosing your section order, and using the answer-review-and-edit feature'],
+ tips:['Practise Data Insights early: it is the least familiar section for most candidates','Use the three allowed question bookmarks and edits strategically','Timing matters more than perfection; guess and move on after ~2 min','Choose your section order in practice tests to find what suits you']},
+{id:'SAT',cat:'ug',name:'SAT (Digital)',tag:'Undergraduate',short:'Undergraduate admissions, mainly US.',len:'~2 h 14 min',range:'400–1600 total; 200–800 per section',mode:'Digital, at a test centre',
+ who:'Undergraduate applicants, especially to US colleges. Many universities in the UK, Canada, Australia, Asia and Europe also consider it.',
+ sec:[['Reading & Writing','2 modules, 27 questions each','32 min each'],['Math','2 modules, 22 questions each','35 min each']],
+ score:'Total score is 400–1600 (two sections, 200–800 each). The test is adaptive by module: your results in the first module of each section determine the difficulty of the second.',
+ skills:['Short passages paired with one question each','Grammar, punctuation, rhetorical synthesis','Algebra, advanced math, problem solving and data analysis, geometry and trig','Built-in graphing calculator (Desmos) available on all Math questions'],
+ tips:['Practise inside the official Bluebook app to learn the interface','Learn Desmos shortcuts to solve algebra visually','Many Math questions can be solved quicker by plugging in answers','Take 2–3 full adaptive practice tests before test day']},
+{id:'ACT',cat:'ug',name:'ACT',tag:'Undergraduate',short:'US undergraduate admissions; science now optional.',len:'~2 h core (+40 min optional Science)',range:'1–36 composite',mode:'Test centre (paper) or online/digital in some regions',
+ who:'Undergraduate applicants to US colleges. Accepted by virtually all US institutions as an alternative to the SAT.',
+ sec:[['English','50 questions','35 min'],['Math','45 questions','50 min'],['Reading','36 questions','40 min'],['Science (optional)','40 questions','40 min'],['Writing (optional)','1 essay','40 min']],
+ score:'The composite score (1–36) averages English, Math and Reading. Since the ACT redesign, Science is optional and not counted in the composite. Always check the latest format as it has changed in recent years.',
+ skills:['Fast, accurate grammar and rhetoric decisions','Pre-algebra through trigonometry, with a broader math range than the SAT','Reading speed across four passage types','Interpreting charts and experiments in Science'],
+ tips:['Pace is the main challenge: practise with a strict timer','Learn the 10 most common grammar rules thoroughly','Decide whether to take Science based on target schools\' policies','Mark answers on paper carefully; there is no penalty for guessing']},
+{id:'LSAT',cat:'law',name:'LSAT',tag:'Law school',short:'JD and law-school admissions.',len:'~2 h 20 min (+ separate Writing)',range:'120–180',mode:'Test centre or remote, digital',
+ who:'Applicants to law schools in the US, Canada and a growing number of other countries.',
+ sec:[['Logical Reasoning','2 scored sections (~24–26 questions each)','35 min each'],['Reading Comprehension','1 scored section (27 questions)','35 min'],['Unscored variable section','Experimental','35 min'],['LSAT Writing','Separate, taken online','35 min']],
+ score:'Scores range 120–180, based on the number of questions answered correctly. The Analytical Reasoning ("logic games") section was removed in August 2024. LSAT Writing is unscored but sent to schools.',
+ skills:['Identifying argument structure, assumptions, flaws and strengthening/weakening evidence','Close reading of dense, multi-passage, comparative texts','Fast, consistent timing across a section of 25+ questions','Staying sharp across a long, mentally intense test'],
+ tips:['Do untimed drills first, then move to 35-minute sections','Keep a wrong-answer journal, noting why the correct answer is right','Learn question-type patterns until they are automatic','Many students need 3–6 months; start early']},
+{id:'IELTS',cat:'eng',name:'IELTS',tag:'English language',short:'Study, work and migration worldwide.',len:'~2 h 45 min',range:'Band 0–9 (overall and per skill)',mode:'Paper, computer, or IELTS Online',
+ who:'Applicants to universities in the UK, Australia, Canada, New Zealand, Ireland, and many in the US; also used for immigration. Choose Academic for study or General Training for work/migration.',
+ sec:[['Listening','4 sections, 40 questions','30 min (+10 transfer on paper)'],['Reading','3 passages, 40 questions','60 min'],['Writing','2 tasks (graph/letter + essay)','60 min'],['Speaking','Face-to-face interview, 3 parts','11–14 min']],
+ score:'Each skill is scored in bands from 0 to 9, in half-band steps. The overall band is the average of the four. Results are typically available in 3–13 days depending on format.',
+ skills:['Accent variety in Listening and following a recording only once','Skimming, scanning and matching headings in Reading','Task 1 data description and Task 2 essay structure','Fluency, coherence and natural pronunciation in Speaking'],
+ tips:['Speaking is with a human examiner; practise talking aloud on any topic','Writing tasks are scored on four criteria, so learn the band descriptors','Task 2 is worth twice Task 1; budget ~40 min for it','Practise reading under time pressure with real past papers']},
+{id:'TOEFL',cat:'eng',name:'TOEFL iBT',tag:'English language',short:'Widely accepted at universities, especially in North America.',len:'~1.5 h (new format)',range:'1–6 band scale (legacy 0–120 shown during transition)',mode:'Test centre or home edition',
+ who:'Applicants to universities worldwide, especially in the US and Canada.',
+ sec:[['Reading','Adaptive, academic and daily-life texts','Timed'],['Listening','Lectures, conversations, announcements','Timed'],['Writing','Integrated and academic-discussion style tasks','Timed'],['Speaking','Listen-and-repeat and interview-style responses','Timed']],
+ score:'The TOEFL iBT was redesigned in January 2026: it is shorter, partly adaptive and now reports scores on a 1–6 band scale, with legacy 0–120 scores also shown for a transition period. Confirm exact formats and score conversion with ETS and your target schools.',
+ skills:['Understanding academic lectures and campus conversations','Writing clear, evidence-based responses under time pressure','Speaking in short, structured responses to prompts','Reading mixed academic and everyday texts efficiently'],
+ tips:['Check that each of your target schools accepts the new score scale','Practise with the official ETS materials for the new format','Take notes while listening, using shorthand you can read back','Record your Speaking answers and review them']},
+{id:'PTE',cat:'eng',name:'PTE Academic',tag:'English language',short:'Fast, computer-scored English test.',len:'~2 h',range:'10–90',mode:'Computer, test centre',
+ who:'Students applying to universities in Australia, the UK, New Zealand, Canada and the US; also used for visas in some countries.',
+ sec:[['Speaking & Writing','Read aloud, repeat sentence, describe image, essay…','54–67 min'],['Reading','Fill-in-the-blanks, re-order paragraphs, MCQ','29–30 min'],['Listening','Summarise spoken text, dictation, MCQ…','30–43 min']],
+ score:'Overall and communicative-skill scores are 10–90. The test is scored entirely by AI, and results are typically available within about two business days.',
+ skills:['Integrated tasks where one skill feeds another (e.g. listening then writing)','Speaking clearly into a microphone with fluent delivery','Spelling-accurate dictation','Quick, accurate summarising'],
+ tips:['Don\'t restart or pause when speaking; fluency counts more than perfection','Learn each task type\'s scoring rubric','Master templates for Describe Image and Summarise Written Text','Practise with headphones and a real mic setup']},
+{id:'DET',cat:'eng',name:'Duolingo English Test',tag:'English language',short:'Online, adaptive, quick results.',len:'~1 hour',range:'10–160',mode:'Online, at home',
+ who:'Applicants to the many universities (mainly in North America, but also worldwide) that accept it. Check each school: some do not.',
+ sec:[['Onboarding and ID check','Identity, environment scan','~10 min'],['Adaptive test','Read & complete, listen & type, read aloud, write about image, etc.','~45 min'],['Video interview and writing sample','Ungraded, sent to schools','~10 min']],
+ score:'Scores are 10–160 in 5-point steps with sub-scores for Literacy, Comprehension, Conversation and Production. The test adapts to your level. Results typically arrive within 48 hours.',
+ skills:['Spelling, vocabulary and sentence-level accuracy','Understanding short audio','Natural speaking and writing on open prompts','Staying calm under a webcam-monitored environment'],
+ tips:['Check your webcam, mic and internet connection before test day','Quiet room, nothing else on the desk, and no interruptions','Read the instructions each time: question types change quickly','Take the official practice test to see the interface']}
+];
+const CATS={all:'All tests',grad:'Graduate & business',ug:'Undergraduate',law:'Law',eng:'English language'};
+let cat='all',sel='GRE';
+const $=id=>document.getElementById(id);
+function esc(s){return String(s).replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]))}
+function chips(){$('chips').innerHTML=Object.entries(CATS).map(([k,v])=>`<button class="chip" aria-pressed="${k===cat}" data-c="${k}">${v}</button>`).join('');
+ $('chips').querySelectorAll('button').forEach(b=>b.onclick=()=>{cat=b.dataset.c;grid()})}
+function grid(){chips();const list=T.filter(t=>cat==='all'||t.cat===cat);
+ if(!list.some(t=>t.id===sel))sel=list[0].id;
+ $('grid').innerHTML=list.map(t=>`<button class="card" aria-pressed="${t.id===sel}" data-id="${t.id}"><span class="tag">${t.tag}</span><h3>${t.id}</h3><p>${t.short}</p></button>`).join('');
+ $('grid').querySelectorAll('button').forEach(b=>b.onclick=()=>{sel=b.dataset.id;grid();$('detail').scrollIntoView({behavior:'smooth',block:'start'})});
+ detail()}
+function detail(){const t=T.find(x=>x.id===sel);
+ $('detail').innerHTML=`<span class="tag" style="font:700 12px system-ui;color:var(--acc);text-transform:uppercase;letter-spacing:.05em">${t.tag}</span>
+ <h3>${t.name}</h3><p>${t.who}</p>
+ <div class="facts"><div class="fact"><small>Length</small><b>${t.len}</b></div><div class="fact"><small>Score range</small><b>${t.range}</b></div><div class="fact"><small>Delivery</small><b>${t.mode}</b></div></div>
+ <h4>Test structure</h4><div class="tbl"><table><thead><tr><th>Section</th><th>Content</th><th>Time</th></tr></thead><tbody>${t.sec.map(r=>`<tr><td><b>${r[0]}</b></td><td>${r[1]}</td><td>${r[2]}</td></tr>`).join('')}</tbody></table></div>
+ <h4>How it\'s scored</h4><p>${t.score}</p>
+ <div class="cols"><div><h4>Skills tested</h4><ul>${t.skills.map(s=>`<li>${s}</li>`).join('')}</ul></div><div><h4>Preparation tips</h4><ul>${t.tips.map(s=>`<li>${s}</li>`).join('')}</ul></div></div>
+ <p style="margin-top:20px"><a class="btn" href="#contact">Get a ${t.id} study plan</a></p>`}
+$('cmp').innerHTML=T.map(t=>`<tr><td>${t.id}</td><td>${t.tag}</td><td>${t.len}</td><td>${t.range}</td><td>${t.mode}</td></tr>`).join('');
+grid();
+</script>
+</body>
+</html>
